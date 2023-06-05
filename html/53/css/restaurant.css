@@ -1,0 +1,18 @@
+header {
+  text-align: center;
+  border: 6px dashed blue;
+  border-style: dashed;
+
+  border: 19px dashed red;
+  border-style: ridge;
+  border-color: blue;
+  border-top-color: yellow;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  color: white;
+}
