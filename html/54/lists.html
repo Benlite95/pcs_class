@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      ol {
+        list-style-type: hebrew;
+      }
+
+      ul {
+        list-style-type: decimal;
+      }
+
+      .arrow-list {
+        list-style-image: url(images/arrow.png);
+        margin-left: 1em;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+
+      .inline-list, .inline-list li {
+        display: inline;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Scrambled Eggs</h2>
+    <ol>
+      <li>Crack 2 eggs in bowl</li>
+      <li>Add spices</li>
+      <li>mix</li>
+      <li>fry</li>
+    </ol>
+
+    <h2>Shopping List</h2>
+    <ul>
+      <li>Drinks</li>
+      <li>Eggs</li>
+      <li>Apples</li>
+      <li>Bread</li>
+    </ul>
+
+    <h2>Shopping List</h2>
+    <ul class="arrow-list">
+      <li>Drinks</li>
+      <li>Eggs</li>
+      <li>Apples</li>
+      <li>Bread</li>
+    </ul>
+
+    <div>
+      <img src="images/arrow.png" alt="">
+      <span>some text here</span>
+    </div>
+
+    <h1>inline list</h1>
+    before
+    <ul class="inline-list">
+      <li>Drinks</li>
+      <li>Eggs</li>
+      <li>Apples</li>
+      <li>Bread</li>
+    </ul>
+    after
+  </body>
+
+</html>
