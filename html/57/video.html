@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/videos.css" media="screen and (width >= 800px)">
+    <style>
+      /*video {
+        width: 33.33%;
+        padding: 1em;
+        box-sizing: border-box;
+      }
+
+      @media (width <= 600px) {
+        video {
+          width: 100%;
+        }
+      }*/
+
+      video {
+        width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+      }
+
+      /*@media (width >= 400px) {*/
+      @media screen and (width >= 400px) {
+        video {
+          width: 50%;
+        }
+      }
+
+      @media (width >= 800px) {
+        video {
+          width: 33.33%;
+        }
+      }
+
+      @media print {
+        video {
+          display: none;
+        }
+
+        h1 {
+          page-break-after: always;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Some Videos</h1>
+    <video src="media/yesh_tikvah.mp4" controls xautoplay loop poster="images/restaurant.jpg" xpreload="none"></video><!--
+    --><video src="media/yesh_tikvah.mp4" controls xautoplay loop poster="images/restaurant.jpg" xpreload="metadata"></video><!--
+    --><video src="media/yesh_tikvah.mp4" controls xautoplay loop poster="images/restaurant.jpg" xpreload="auto"></video><!--
+    --><video src="media/yesh_tikvah.mp4" controls xautoplay loop poster="images/restaurant.jpg"></video><!--
+    --><video src="media/yesh_tikvah.mp4" controls xautoplay loop poster="images/restaurant.jpg"></video><!--
+    --><video src="media/yesh_tikvah.mp4" controls xautoplay loop poster="images/restaurant.jpg"></video><!--
+    --><video src="media/yesh_tikvah.mp4" controls xautoplay loop poster="images/restaurant.jpg"></video><!--
+    --><video src="media/yesh_tikvah.mp4" controls xautoplay loop poster="images/restaurant.jpg"></video><!--
+    --><video src="media/yesh_tikvah.mp4" controls xautoplay loop poster="images/restaurant.jpg"></video>
+    <p>Hope you liked them</p>
+  </body>
+
+</html>

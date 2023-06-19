@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* universal selector*/
+      * {
+        box-sizing: border-box;
+      }
+
+      /* type selector */
+      section {
+        margin-left: 1em;
+      }
+
+      /* id selector */
+      #it {
+        color: blue;
+      }
+
+      /* class selector */
+      .special {
+        color: red;
+      }
+
+      /* combination selector */
+      div.special {
+        text-decoration: underline;
+      }
+
+      /* multiple selectors */
+      .special,
+      p {
+        font-size: 1.5em;
+      }
+
+      /* descendent selector */
+      section p {
+        font-style: italic;
+      }
+
+      /* universal descendent selector */
+      section * {
+        transform: rotate(5deg);
+      }
+
+      /* immediate descendent selector */
+      section>p {
+        font-family: cursive;
+      }
+
+      /* immediate sibling selector */
+      section+p {
+        font-family: fantasy;
+      }
+
+      /* non immmediate sibling selector */
+      section~p {
+        color: goldenrod;
+      }
+
+      /* not */
+      section:not(.special) {
+        padding: 1em;
+      }
+     </style>
+  </head>
+
+  <body>
+    <p>top of page</p>
+    <section id="it">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate necessitatibus tenetur
+      adipisci
+      quasi animi earum officia ducimus. Reprehenderit maxime, dignissimos magni voluptas quisquam totam?</section>
+    <section class="special">Non quis, atque aliquam repudiandae ea aperiam nesciunt molestias magnam velit dolor! Quis
+      cum sint velit
+      commodi ut vel blanditiis architecto esse labore magnam. Corrupti.</section>
+    <section>Eos quia, quidem nam voluptates dolores amet
+      <div class="special">Im a special div in a section
+        <p>Im a paragraph inside a div inside a section</p>
+      </div>
+      <p>Im a paragraph in a section</p>
+    </section>
+    <section>Impedit quasi veritatis amet ipsum, corrupti et, esse inventore numquam aut nisi cumque itaque quia
+      adipisci. Magni animi vitae laborum ullam architecto unde voluptas rem?</section>
+    <section>Deleniti vero provident, voluptatibus error unde autem ducimus beatae similique. Distinctio harum numquam
+      nostrum perspiciatis repudiandae itaque autem eligendi? Quidem libero eos totam. Deserunt, veniam?</section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloremque facilis sequi error saepe esse
+      perferendis fuga, ab at, voluptatibus amet dolorum sed recusandae sit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos voluptatum, dolore quaerat veniam
+      corporis, ab enim officia natus sed dolor exercitationem tempore eveniet officiis.</p>
+  </body>
+
+</html>
