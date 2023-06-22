@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      table {
+        /*border: 1px solid black;*/
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+      }
+
+      td,
+      th {
+        /*border: 1px solid black;*/
+        border-bottom: 1px solid black;
+        padding: .5em;
+      }
+
+      td {
+        text-align: right;
+      }
+
+      tfoot {
+        /*color: red;*/
+        background-color: red;
+        color: white;
+      }
+
+      caption {
+        caption-side: bottom;
+      }
+
+      /*.even {
+        background-color: lightblue;
+      }*/
+
+      /*0 1 2 3 2*0=0, 2*1=2  2*2=4 2*3=6*/
+      /*tbody tr:nth-child(2n) {
+        background-color: lightblue;
+      }*/
+
+      /*tbody tr:nth-child(2n+1) {
+        background-color: lightblue;
+      }*/
+
+      /*tbody tr:nth-child(-n+3) {
+        background-color: lightblue;
+      }*/
+
+      table tbody tr:hover {
+        background-color: pink; /*!important;*/
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: lightblue;
+      }
+
+      #it {
+        color: red;
+      }
+
+      .special {
+        color: green;
+      }
+
+      p {
+        color: yellow;
+      }
+
+      #it p.special {
+        font-size: 2em;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>PCS 2023</h1>
+    <p id="it" class="special">I am the paragraph</p>
+    <table>
+      <caption>
+        <h5>Student Grades</h5>
+      </caption>
+      <thead>
+        <tr>
+          <th>Joe</th>
+          <th>Kamala</th>
+          <th>Anthony</th>
+          <th>Myorkis</th>
+          <th>Trump</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8546546546546549</td>
+          <td>93</td>
+          <td>97</td>
+          <td>86</td>
+          <td>94</td>
+        </tr>
+        <tr class="even">
+          <td>88</td>
+          <td>95</td>
+          <td>63</td>
+          <td>78</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>8546546546546549</td>
+          <td>93</td>
+          <td>97</td>
+          <td>86</td>
+          <td>94</td>
+        </tr>
+        <tr class="even">
+          <td>88</td>
+          <td>95</td>
+          <td>63</td>
+          <td>78</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>8546546546546549</td>
+          <td>93</td>
+          <td>97</td>
+          <td>86</td>
+          <td>94</td>
+        </tr>
+        <tr class="even">
+          <td>88</td>
+          <td>95</td>
+          <td>63</td>
+          <td>78</td>
+          <td>88</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>2090</td>
+          <td>1234</td>
+          <td>685</td>
+          <td>999</td>
+          <td>1001</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+
+</html>

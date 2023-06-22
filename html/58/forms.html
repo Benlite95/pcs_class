@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        width: 80%;
+        margin: auto;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: .5em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form method="POST">
+      <label>
+        First Name:
+        <input name="firstName"  value="Joe" minlength="3" maxlength="5" required/>
+      </label>
+
+      <label for="lastName">Last Name: </label>
+      <input id="lastName" name="lastName" placeholder="enter last name"/>
+
+      <label>
+        Password:
+        <input type="password" name="password" />
+      </label>
+
+      <label>
+        Age:
+        <input type="number" name="number" min="0" max="120" step="any"/>
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" />
+      </label>
+
+      <label>
+        Favorite Color:
+        <input type="color" name="color" value="#d51a1a"/>
+      </label>
+
+      <label>
+        Birthday:
+        <input type="date" name="date" value="2000-01-01" />
+      </label>
+
+      <label>
+        Favorite Month:
+        <input type="month" name="month" value="2000-01" />
+      </label>
+
+      <label>
+        Favorite Week:
+        <input type="week" name="week" value="2000-W22" />
+      </label>
+
+      <input type="submit"/>
+    </form>
+  </body>
+
+</html>

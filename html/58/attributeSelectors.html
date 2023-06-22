@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      /*list-style-image: url("images/word.jpg");
+      margin-left: 1em;*/
+      list-style: none;
+      padding: 0;
+    }
+
+    a {
+      background-repeat: no-repeat;
+      height: 64px;
+      display: inline-block;
+      padding-left: 64px;
+    }
+
+    /*a[href="homework1.docx"] {
+      background-image: url("images/word.jpg");
+    }*/
+
+    /* * = wildcard, contains
+    /*a[href*=".doc"] {
+      background-image: url("images/word.jpg");
+    }
+
+    a[href*=".ppt"] {
+      background-image: url("images/powerpoint.png");
+    }*/
+
+    /* $ = ends with */
+    a[href$=".doc"], a[href$=".docx"] {
+      background-image: url("images/word.jpg");
+    }
+
+    a[href$=".ppt"], a[href$=".pptx"] {
+      background-image: url("images/powerpoint.png");
+    }
+
+    /* starts with */
+    a[href^="homework"]{
+      background-image: url("images/hotdog.jpg");
+    }
+
+    h1[pcs="foo"] {
+      color: blue;
+    }
+
+    [pcs] {
+      font-style: italic;
+    }
+</style>
+
+</head>
+<body>
+  <h1 pcs="foo" class="foo">PCS Dropbox</h1>
+  <ul>
+    <li >
+      <a href="homework1.docx">homework1.docx</a>
+    </li>
+    <li>
+      <a href="test.doc">test.doc</a>
+    </li>
+    <li>
+      <a href="classPresentation.doc.pptx">classPresentation.doc.pptx</a>
+    </li>
+  </ul>
+  <h5 pcs>copyright &copy; 2023</h5>
+</body>
+</html>
