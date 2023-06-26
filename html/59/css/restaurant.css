@@ -1,0 +1,83 @@
+header {
+  text-align: center;
+  border: 6px dashed blue;
+  border-style: dashed;
+
+  border: 19px dashed red;
+
+  border-width: 20px;
+  border-style: ridge;
+  border-color: blue;
+
+  border-radius: 18px;
+
+  /*color: red;
+
+  border-top-color: yellow;*/
+  margin-bottom: 1em;
+
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(171, 181, 216, 1) 44%, rgba(148, 168, 233, 1) 100%);
+
+  opacity: .8;
+
+  font-family: Haettenschweiler, Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+html {
+  background-color: white;
+}
+
+body {
+  background-color: black;
+  color: white;
+  /*max-width: 800px;*/
+  width: 100%;
+  margin: auto;
+  padding: 1em;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+@media screen and (600px <= width) {
+  body {
+    width: 80%
+  }
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: gray;
+}
+
+nav a:focus {
+  color: lightblue;
+}
+
+nav a:hover {
+  color: rgb(12, 154, 7, .5);
+}
+
+nav a:active {
+  color: red;
+}
+
+a.special:hover {
+  color: gold;
+}
+
+h1 {
+  text-decoration: none;
+}
+
+div {
+  border-bottom: 1px solid white;
+}
+
+nav ul, nav li {
+  display: inline;
+  padding: 0
+}

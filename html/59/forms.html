@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        width: 80%;
+        margin: auto;
+      }
+
+      input:not([type="radio"]):not([type="checkbox"]),
+      textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: .5em;
+      }
+
+      textarea {
+        height: 6em;
+        ;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form method="POST" action="processOrder.php">
+      <label>
+        First Name:
+        <input name="firstName" value="Joe" minlength="3" maxlength="5" required />
+      </label>
+
+      <label for="lastName">Last Name: </label>
+      <input id="lastName" name="lastName" placeholder="enter last name" />
+
+      <label>
+        Password:
+        <input type="password" name="password" />
+      </label>
+
+      <label>
+        Age:
+        <input type="number" name="number" min="0" max="120" step="any" />
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" />
+      </label>
+
+      <label>
+        Favorite Color:
+        <input type="color" name="color" value="#d51a1a" />
+      </label>
+
+      <label>
+        Birthday:
+        <input type="date" name="date" value="2000-01-01" />
+      </label>
+
+      <label>
+        Favorite Month:
+        <input type="month" name="month" value="2000-01" />
+      </label>
+
+      <label>
+        Favorite Week:
+        <input type="week" name="week" value="2000-W22" />
+      </label>
+
+      <label>
+        Tel:
+        <input type="tel" name="tel" />
+      </label>
+
+      <label>
+        Rating:
+        <input type="range" name="rating" min="1" max="5" />
+      </label>
+
+      <label>
+        Comments:
+        <textarea name="comments" placeholder="enter comment here">default comment value here</textarea>
+      </label>
+
+      <label>
+        Who should be the republican candidate?
+        <input type="radio" name="rep-pres" checked />Trump
+        <input type="radio" name="rep-pres" required />Desantis
+        <input type="radio" name="rep-pres" />Haley
+        <!--input type="radio" name="dem-pres"/>Biden-->
+      </label>
+
+      <br>
+      <label>
+        Pick sides
+        <label>
+          <input type="checkbox" xname="sides" xvalue="fries" name="fries" checked />Fries
+        </label>
+        <label>
+          <input type="checkbox" xname="sides" xvalue="spicy fries" name="spicy fries" />Spicy Fries
+        </label>
+        <input type="checkbox" xname="sides" xvalue="onion rings" name="onion rings" />Onion Rings
+        <!--input type="radio" name="dem-pres"/>Biden-->
+      </label>
+
+      <br>
+
+      <label>
+        Pick a drink
+        <select name="drink" multiple>
+          <option value="1">coke</option>
+          <option value="2" selected>pepsi</option>
+          <option>snapple</option>
+        </select>
+      </label>
+
+      <input type="submit" value="order it!" />
+
+      <input type="reset">
+
+      <button type="reset">
+        press here to reset
+      </button>
+
+      <button><img src="images/hotdog.jpg"> click here to order</button>
+
+      <button type="button">click me!</button>
+      <input type="button" value="click me to!" />
+    </form>
+  </body>
+
+</html>

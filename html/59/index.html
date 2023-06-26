@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCS Restaurant</title>
+    <link rel="icon" href="images/restaurant.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/restaurant.css">
+    <style>
+      /*h1,*/
+      p {
+        /*color: green;*/
+        /*font-size: 32px;
+        font-size: 2em;*/
+      }
+
+      /*p {
+        font-size: 3em;
+      }*/
+      html {
+        /*font-size: .625em;*/
+        /*font-size: 62.5%;*/
+      }
+
+      article {
+        /*font-size: 2rem;*/
+      }
+
+      p {
+        /*font-size: 3em;*/
+        /*font-size: 72pt;
+        font-size: 10pc;*/
+        /*font-weight: bold;*/
+      }
+
+      /*header {
+        text-align: center
+      }*/
+
+      header h1 {
+        font-style: italic;
+      }
+
+      .title {
+        font-family: 'Pacifico', cursive;
+      }
+
+      #to-top {
+        position: fixed;
+        top: 0;
+        /*left: 0;*/
+        background-color: lightgray;
+        padding: .5em;
+        margin-left: -52px;
+      }
+
+      table {
+        width: 80%;
+        margin: auto;
+        border-collapse: collapse;
+      }
+
+      tbody td, tbody th {
+        border-top: 1px solid white;
+      }
+
+      tbody tr:last-of-type td {
+        border-bottom: 1px solid white;
+      }
+
+      tbody td:not(:first-child), tfoot td {
+        text-align: right;
+      }
+
+      tbody td:last-child, tfoot td:last-child {
+        color: red;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: burlywood;
+      }
+
+      tbody tr:hover {
+        background-color: bisque;
+      }
+
+      tfoot td:first-child {
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <h1>PCS Restaurant</h1>
+        <img src="images/restaurant.jpg" alt="nice restaurant picture here">
+        <!--img src="data:image/jpeg;base64,.... base 64 data here" alt=""-->
+
+        <nav>
+          <ul>
+            <li><a href="index.html">home</a> |</li>
+            <li><a href="menu.html">menu</a> |</li>
+            <li><a href="aboutus.html">about us</a> |</li>
+            <li><a href="foo.html">foo</a> |</li>
+            <li><a href="https://google.com" target="_blank">google</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <a id="to-top" href="#top">top</a>
+    <h1 id="top" class="title">Our History</h1>
+    some text before article and a link to google <a class="special" href="https://google.com"
+      target="_blank">google</a>
+    <article class="special">
+      some text in article before p
+      <p>
+        <strong>Lorem</strong> <em>ipsum</em> dolor sit amet consectetur adipisicing elit. Inventore corporis eos fuga,
+        quod
+        autem enim tenetur esse numquam amet officia maxime incidunt quia at quo, alias non magnam doloribus, delectus
+        eveniet asperiores saepe recusandae? Accusantium laboriosam labore atque rem reprehenderit. Nulla omnis
+        provident
+        cupiditate modi pariatur perferendis necessitatibus blanditiis unde, hic possimus esse. Molestias doloremque
+        iusto,
+        aliquam magnam voluptates itaque accusamus repellat facilis sapiente, sequi accusantium, assumenda voluptatum
+        enim
+        temporibus nobis officiis velit dicta cupiditate deleniti vel. Suscipit odit consequatur, ad et omnis voluptatum
+        sapiente doloribus ipsam numquam reprehenderit explicabo minima voluptas. Molestiae esse ullam suscipit
+        voluptates
+        explicabo tempore distinctio!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis voluptatum sapiente dolorum ratione
+        sequi mollitia laudantium commodi libero, facilis error rerum animi asperiores et eos magni, eius corrupti
+        dolores repellat suscipit illum nostrum, voluptate tempora. Aut ratione aliquam magni adipisci quisquam ad sequi
+      </p>
+
+      <table>
+        <caption>Servings served</caption>
+        <thead>
+          <tr>
+            <th>item</th>
+            <th>small</th>
+            <th>large</th>
+            <th>total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>steak</td>
+            <td>1000</td>
+            <td>324</td>
+            <td>2310</td>
+          </tr>
+          <tr>
+            <td>burger</td>
+            <td>2312</td>
+            <td>1234</td>
+            <td>4444</td>
+          </tr>
+          <tr >
+            <td>hotdog</td>
+            <td>46364</td>
+            <td>54545</td>
+            <td>484747</td>
+          </tr>
+          <tr>
+            <td>chulent</td>
+            <td>43243</td>
+            <td>89897</td>
+            <td>786767</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">total</td>
+            <td>67675546</td>
+          </tr>
+        </tfoot>
+      </table>
+    </article>
+
+  </body>
+
+</html>
