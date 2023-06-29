@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        gap: 2em;
+        justify-content: space-around;
+      }
+
+      .columns {
+        display: flex;
+        gap: 2em;
+      }
+
+      .columns section {
+        flex: 1;
+        /* 1 1 0 */
+
+        border: 2px solid red;
+      }
+
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+
+        margin-top: 1em;
+      }
+
+      .grid section {
+        flex: 1 1 10em;
+        /*flex-basis: 10em;*/
+        border: 2px solid red;
+      }
+
+      .with-sidebar {
+        display: flex;
+        gap: 1em;
+
+        margin-top: 1em;
+        flex-direction: column;
+      }
+
+      .with-sidebar aside {
+        flex: 1 1 30%;
+
+        border: 2px solid red;
+      }
+
+      .with-sidebar section {
+        flex: 1 1 70%;
+
+        border: 2px solid red;
+      }
+
+      @media (800px <= width) {
+        .with-sidebar {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact us</li>
+        <li>history</li>
+      </ul>
+    </nav>
+    <hr>
+    <article class="columns">
+      <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident omnis recusandae quas assumenda optio
+        ducimus sed vitae? Sint voluptate dolores nulla? Amet obcaecati, ad laboriosam omnis iure rem sunt repellat?
+      </section>
+      <section>Laborum, quo recusandae excepturi magnam voluptatum, corporis illum aut voluptatibus commodi minus
+        perferendis maiores ullam ratione sed temporibus dolorem modi? Earum, unde tenetur! Animi, harum optio! Nulla
+        iste et sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum numquam ducimus
+        voluptatum commodi voluptate deleniti in quos, ipsum, esse quae accusamus voluptas eos maxime at. Totam illum
+        facere voluptatem.</section>
+      <section>Tempora minus eligendi quisquam suscipit odio nemo consectetur non dolor amet impedit officiis quasi
+        porro quo cum dolorem alias temporibus illo sit ducimus, cumque quas accusamus dolores repellendus! Ab, hic!
+      </section>
+    </article>
+
+    <article class="grid">
+      <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quod voluptate fugit quos, ratione
+        numquam non adipisci ea expedita minima culpa fuga voluptates harum nesciunt pariatur reprehenderit est cum
+        tempora?</section>
+      <section>Hic, quis cumque. Delectus nesciunt expedita ut, reiciendis ad veniam nulla voluptatibus sint voluptatem
+        porro perspiciatis minima est quia et illo harum odio ea animi facilis possimus amet doloribus adipisci!
+      </section>
+      <section>Blanditiis incidunt repellat voluptates exercitationem nobis, deleniti quo sint aperiam esse vel.
+        Blanditiis cum fugiat quisquam voluptate saepe, recusandae eum facere rerum autem beatae perferendis distinctio
+        aperiam quo ratione iure!</section>
+      <section>Corrupti odio error exercitationem id autem dignissimos architecto dolorem quibusdam pariatur incidunt
+        voluptatum consequatur nobis non velit, enim deleniti magnam, maiores sint modi delectus. Fugit modi ipsa nam
+        excepturi obcaecati.</section>
+      <section>Eligendi odio exercitationem autem sunt aliquid libero animi, delectus qui consequatur dicta alias
+        reiciendis voluptatem, illo, impedit ullam quisquam in et mollitia neque. Numquam necessitatibus officia eaque
+        ea corrupti ullam?</section>
+    </article>
+
+    <article class="with-sidebar">
+      <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolorem autem maxime ab expedita
+        reprehenderit veniam in eum dicta quaerat iure cumque laudantium, voluptatem quos. Rerum iusto cum sit esse.
+      </aside>
+      <section>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit vel, reiciendis, quam officiis sequi
+        recusandae accusantium, vitae maxime sapiente ipsa alias non asperiores ab molestiae et fuga neque cum laborum
+        voluptatum repellendus quia? Ut repellendus maiores quia totam officia adipisci nisi suscipit quae expedita
+        reiciendis illum deleniti recusandae eligendi velit, hic minima officiis sunt ad. Labore molestias, deserunt ea
+        repellendus tempore libero quas magni velit corrupti error dolorem et aliquam iusto accusamus expedita quia
+        numquam! Cum perspiciatis doloribus placeat, vel nisi officiis, laboriosam quam at possimus impedit molestias
+        vero molestiae nam architecto consequatur fugit provident, reprehenderit aspernatur pariatur neque nemo
+        praesentium repellendus natus! Numquam animi exercitationem culpa doloremque quaerat iusto, laborum expedita,
+        natus repudiandae magni eos cum, reprehenderit sed minus soluta eum laudantium esse atque repellendus provident.
+        Reiciendis molestiae repudiandae eligendi quia, et vel, iusto debitis nemo delectus hic rem tempore similique,
+        asperiores doloremque veniam? Temporibus possimus quis qui voluptas explicabo exercitationem blanditiis, sed
+        recusandae minus quasi optio dolorem quaerat quas non omnis eius molestiae voluptates quam doloribus quod iusto
+        pariatur amet impedit quibusdam. Aperiam maiores, magni exercitationem itaque odit ut illum voluptas nobis
+        consequatur dicta tempora rem quos quisquam aliquam ea illo debitis. Culpa, provident architecto velit
+        voluptatibus fuga beatae impedit cupiditate, minus vel, animi dolores veritatis vitae dolorum veniam aliquid
+        assumenda optio esse similique omnis inventore unde sint? Aspernatur exercitationem iure autem officia aliquid
+        eius numquam quae voluptates? Autem esse enim voluptates expedita quae dolorum corporis. Mollitia exercitationem
+        earum totam. Voluptatem, nobis? Vitae voluptatibus quisquam vero libero repellat.</section>
+    </article>
+  </body>
+
+</html>
