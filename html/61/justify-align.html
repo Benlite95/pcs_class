@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: grid;
+      gap: 1em;
+
+      grid-auto-columns: 150px;
+      grid-auto-rows: 150px;
+
+      justify-content: /*start*/center;
+      align-items: stretch/*start*/;
+
+      grid-template-columns: [start] 100px [mid-left] 200px [mid-right] 300px [end];
+    }
+
+    div:nth-child(1) {
+      background-color: red;
+
+      grid-column: start / mid-right;
+      grid-row: 1;
+
+      justify-self: center;
+    }
+
+    div:nth-child(2) {
+      background-color: yellow;
+
+      grid-row: 1 / 4;
+      grid-column: mid-right / end;
+
+      align-self: center;
+    }
+
+    div:nth-child(3) {
+      background-color: green;
+
+      grid-column: 2 / 4;
+    }
+
+    div:nth-child(4) {
+      background-color: blue;
+
+      grid-row: 2 / 5;
+    }
+
+  </style>
+</head>
+<body>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+</body>
+</html>
