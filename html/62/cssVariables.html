@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      :root {
+        --main-bg-color: lightgreen;
+        --default-padding: 1em;
+      }
+
+      @media (600px < width) {
+        :root {
+          --main-bg-color: red;
+          --default-padding: 2em;
+        }
+      }
+
+      header {
+        background-color: var(--main-bg-color);
+        padding: var(--default-padding);
+        margin: 1em;
+      }
+
+      aside {
+        background-color: var(--main-bg-color);
+        padding: var(--default-padding);
+        color: green;
+        rotate: -1deg;
+        margin-bottom: 1em;
+      }
+
+
+      article {
+        background-color: var(--main-bg-color);
+        padding: var(--default-padding);
+        rotate: 5deg;
+      }
+
+      footer {
+        background-color: var(--main-bg-color);
+        padding: var(--default-padding);
+      }
+
+      footer::before {
+        content: 'before ';
+        display: block;
+      }
+
+      footer::after {
+        content: ' after';
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>I am the header</header>
+    <article>I am the article</article>
+    <aside>I am the aside</aside>
+    <footer>I am the footer</footer>
+  </body>
+
+</html>
