@@ -9,7 +9,9 @@
     "quotes": [
       "error",
       "single"
-    ]
+    ],
+    "no-var": "error",
+    "eqeqeq": "error"
   },
   "env": {
     "browser": true,
