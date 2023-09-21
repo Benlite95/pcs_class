@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1 id="joe">Joe Biden</h1>
+    <h1 id="kamala">Kamala Harris</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      const joe = $('#joe');
+      joe.css('color', 'pink');
+      console.log(joe.css('color'));
+
+      joe.css('position', 'absolute');
+      joe.css('bottom', undefined);
+
+      joe.on('click', () => console.log('Joe was clicked!'));
+      joe.click(() => console.log('Joe was clicked #2!'));
+
+      setTimeout(() => {
+        joe.hide();
+      }, 2000);
+
+      setTimeout(() => {
+        joe.show();
+      }, 4000);
+
+      $('#kamala')
+        .click(() => {
+          console.log('kamala was clicked!');
+        })
+        .css('fontSize', '36px')
+        .css('rotate', '344deg')
+        .on('mouseenter', () => {
+          console.log('mouse is on Kamala');
+        });
+
+        $('h1').css('fontStyle', 'italic');
+    </script>
+  </body>
+
+</html>
