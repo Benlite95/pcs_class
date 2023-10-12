@@ -5,10 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="clock.css">
+    <style>
+      .clock {
+        color: yellow;
+      }
+    </style>
   </head>
 
   <body>
-    <script src="clock.js"></script>
+    <header>
+      <h1>PCS Clock</h1>
+    </header>
+    <hr>
+    <div id="clock"></div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea totam quasi illo in odit, laboriosam aperiam ipsum sapiente id illum quas autem mollitia omnis laborum distinctio natus rerum nulla odio?
+    <script src="clock3.js"></script>
+    <script>
+      window.clock(document.querySelector('#clock'));
+      window.clock();
+    </script>
   </body>
 
 </html>

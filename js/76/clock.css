@@ -1,0 +1,8 @@
+.clock {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 1em;
+  font-size: 2em;
+  color: red;
+  background-color: black;
+}
