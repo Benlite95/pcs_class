@@ -1,5 +1,9 @@
 (function () {
   'use strict';
 
-  console.log(new Date().toLocaleDateString(), new Date().toLocaleTimeString());
+  function showDate() {
+    console.log(new Date().toLocaleDateString(), new Date().toLocaleTimeString());
+  }
+  showDate();
+
 }());
