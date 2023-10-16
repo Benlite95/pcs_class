@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1 id="joe">Joe Biden</h1>
+    <h1 id="kamala" class="foo">Kamala Harris</h1>
+    <script src="pcsTools.js"></script>
+    <script>
+      /*const joe = document.querySelector('#joe');
+      window.app.pcsTools.setCss(joe, 'color', 'pink');
+      console.log(window.app.pcsTools.getCss(joe, 'color'));*/
+
+      /*const joe = document.querySelector('#joe');
+      window.app.pcsTools.css(joe, 'color', 'pink');
+      console.log(window.app.pcsTools.css(joe, 'color'));
+
+      window.app.pcsTools.css(joe, 'position', 'absolute');
+      window.app.pcsTools.css(joe, 'bottom', undefined);
+
+      window.app.pcsTools.on(joe, 'click', () => console.log('Joe was clicked!'));
+
+      setTimeout(() => {
+        window.app.pcsTools.hide(joe);
+      }, 2000);
+
+      setTimeout(() => {
+        window.app.pcsTools.show(joe);
+      }, 4000);*/
+
+      const joe = pcs('#joe');
+      joe.css('color', 'pink');
+      console.log(joe.css('color'));
+
+      joe.css('position', 'absolute');
+      joe.css('bottom', undefined);
+
+      //let joeClicks = 0;
+      joe.on('click', () => {
+        //console.log(`Joe was clicked ${++joeClicks} times`);
+        let joeClicks = (joe.data('clicks') || 0) + 1;
+        console.log(`Joe was clicked ${joeClicks} times`);
+        joe.data('clicks', joeClicks);
+      });
+      //.data('clicks', 0);
+
+      joe.click(() => console.log('Joe was clicked #2!'));
+
+      setTimeout(() => {
+        joe.hide();
+      }, 2000);
+
+      setTimeout(() => {
+        joe.show();
+      }, 4000);
+
+      joe.flash(5000, 250);
+
+      const kamala = window.pcs('#kamala');
+      kamala
+        .click(() => {
+          console.log('kamala was clicked!');
+
+          // let kamalaClicks = (kamala.data('clicks') || 0) + 1;
+          // console.log(`kamala was clicked ${kamalaClicks} times`);
+          // kamala.data('clicks', kamalaClicks);
+
+          console.log(`kamala was clicked ${(kamala.data('clicks') || 0) + 1} times`);
+          kamala.data('clicks', (kamala.data('clicks') || 0) + 1);
+        })
+        .css('color', 'pink')
+        .css('fontSize', '36px')
+        .css('rotate', '344deg')
+        .flash(5000, 'veryFast')
+        .on('mouseenter', () => {
+          console.log('mouse is on Kamala');
+        });
+
+      //window.pcs('#foo').hide();
+
+      const kamala2 = window.pcs('.foo');
+      kamala2.css('font-style', 'italic')
+        .data('innerHTML', '<button>Click Me!</button>');
+      setInterval(() => {
+        console.log(`kamala clicks is ${kamala2.data('clicks')}`, kamala2.data('innerHTML'));
+      }, 1000);
+    </script>
+  </body>
+
+</html>
