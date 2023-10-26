@@ -18,10 +18,10 @@
   });
 
   const theTermsCheckbox = $('#terms');
-  theTermsCheckbox.change(e => {
+  theTermsCheckbox.change(() => {
     console.log('terms clicked', theTermsCheckbox.prop('checked'));
     $('#theForm button').prop('disabled', !theTermsCheckbox.prop('checked'));
-    
+
     // console.log('terms clicked', this, this.checked);
     // $('#theForm button').prop('disabled', !this.checked);
   });

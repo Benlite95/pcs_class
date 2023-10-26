@@ -1,4 +1,4 @@
-/*globals $*/
+/*globals $, pcs*/
 (function () {
   'use strict';
 

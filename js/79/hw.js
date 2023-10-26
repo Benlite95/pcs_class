@@ -4,7 +4,7 @@
 
   const nameInput = $('#name');
   const resultsElem = $('#results');
-  const results2Elem = $('#results2');
+  // const results2Elem = $('#results2');
   const spinner = $('#loading');
 
   /*$('#load').click(async () => {

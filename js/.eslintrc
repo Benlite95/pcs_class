@@ -17,7 +17,9 @@
     "default-param-last": "error"
   },
   "env": {
-    "browser": true,
-    "es6": true
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 11
   }
 }

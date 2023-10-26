@@ -6,7 +6,7 @@
   const lastNames = ['Biden', 'Trump', 'Obama', 'Bush', 'Clinton'];
 
   const MALE = 0;
-  const FEMALE = 1;
+  // const FEMALE = 1;
 
   const people = [];
   let nextId = 1;

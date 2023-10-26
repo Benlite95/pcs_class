@@ -41,7 +41,7 @@ console.log('file start');
     const data = await response.json();
     console.log(data, typeof data, response.status);
   } catch(e) {
-    console.error('oops', e)
+    console.error('oops', e);
   }
 
   console.log('after fetch 2');
