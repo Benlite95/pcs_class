@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      html, body, #sidebar, video {
+        height: 100%;
+        margin: 0;
+      }
+
+      #sidebar {
+        float: left;
+        width: 25%;
+        border-right: 1px solid black;
+        box-sizing: border-box;
+      }
+
+      video {
+        float: left;
+        width: 75%;
+      }
+
+      #sidebar {
+        overflow: auto;
+      }
+
+      #sidebar ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #sidebar li {
+        border: 2px solid black;
+        margin-bottom: 1em;
+        cursor: pointer;
+      }
+
+      #sidebar img {
+        width: 50%;
+        height: 100px;
+        vertical-align: middle;
+      }
+
+      #sidebar span {
+        width: 40%;
+        display: inline-block;
+        padding-left: 1em;
+      }
+
+      .visited {
+        color: gray;
+      }
+
+      #sidebar li.active {
+        border-color: red;
+      }
+
+      .loaded {
+        display: none;
+      }
+
+      #loading {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 id="loading">Please wait. Your videos are loading...</h2>
+    <div id="sidebar" class="loaded">
+      <ul></ul>
+    </div>
+    <video id="theVideo" class="loaded" controls autoplay></video>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="videos.js"></script>
+  </body>
+
+</html>
