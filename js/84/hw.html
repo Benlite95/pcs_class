@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html,
+      body,
+      #parts,
+      #main {
+        height: 100%;
+        margin: 0;
+      }
+
+      #parts {
+        float: left;
+        width: 25%;
+        background-color: red;
+        overflow: auto;
+      }
+
+      #main {
+        float: left;
+        width: 75%;
+        background-image: url("images/background2.jpg");
+        background-size: cover;
+      }
+
+      .part {
+        position: absolute;
+        z-index: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="parts">
+      <!--img class="part" src="images/1.png" />
+      <img class="part" src="images/2.png" />
+      <img class="part" src="images/3.png" />
+      <img class="part" src="images/4.png" />
+      <img class="part" src="images/5.png" />
+      <img class="part" src="images/6.png" />
+      <img class="part" src="images/7.png" />
+      <img class="part" src="images/8.png" />
+      <img class="part" src="images/9.png" />
+      <img class="part" src="images/10.png" />
+      <img class="part" src="images/11.png" />
+      <img class="part" src="images/12.png" />
+      <img class="part" src="images/13.png" />
+      <img class="part" src="images/14.png" />
+      <img class="part" src="images/15.png" />
+      <img class="part" src="images/16.png" />
+      <img class="part" src="images/17.png" />
+      <img class="part" src="images/18.png" />
+      <img class="part" src="images/19.png" />
+      <img class="part" src="images/20.png" />
+      <img class="part" src="images/21.png" />
+      <img class="part" src="images/22.png" />
+      <img class="part" src="images/23.png" /-->
+    </div>
+    <div id="main">
+      <audio src="media/bensound-happyrock.mp3" xautoplay loop controls></audio>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <script src="hw.js"></script>
+  </body>
+
+</html>
