@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      figure {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      #left, #right {
+        font-size: 6em;
+        user-select: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input id="search" placeholder="what do you want to see?"><button id="go">go</button>
+    <hr>
+
+    <span id="left">&lsaquo;</span>
+    <figure>
+      <img />
+      <figcaption></figcaption>
+    </figure>
+    <span id="right">&rsaquo;</span>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="carousel.js"></script>
+  </body>
+
+</html>
