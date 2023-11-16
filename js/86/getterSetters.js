@@ -50,12 +50,12 @@
 
   /////
 
-  const numbers = [1,2,3,4,5,6,7,8];
-  const [a,,b,c,...rest] = numbers;
-  console.log(a,b,c, rest);
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+  const [a, , b, c, ...rest] = numbers;
+  console.log(a, b, c, rest);
 
-  const p = {first: 'Joe', last: 'Biden', age: 205, iq: 33};
-  const {first: theFirst, last, ...bar} = p;
+  const p = { first: 'Joe', last: 'Biden', age: 205, iq: 33 };
+  const { first: theFirst, last, ...bar } = p;
   console.log(theFirst, last, bar);
 
   // spread
@@ -84,4 +84,8 @@
 
   //console.log(sum(1,2,3,4,5));
   console.log(sum(...numbers));
+
+
+  const hunter = { ...p, first: 'Hunter' };
+  console.log(hunter);
 }());
