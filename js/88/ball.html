@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      #theCanvas {
+        display: block;
+      }
+
+      #addBallForm {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="addBallForm">
+      <label>
+        color: <input id="color" type="color">
+      </label>
+      <label>
+        radius: <input id="radius" type="number" min="1" max="200" value="25" required>
+      </label>
+      <button>add</button>
+    </form>
+    <canvas id="theCanvas"></canvas>
+
+    <script src="ball.js"></script>
+  </body>
+
+</html>
