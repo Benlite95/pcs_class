@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input id="name">
+    <div id="result"></div>
+
+    <script src="underscore-umd-min.js"></script>
+    <script src="backbone-min.js"></script>
+    <script>
+      var model = new Backbone.Model({ name: '' });
+
+      var nameInput = document.getElementById('name');
+      var resultElem = document.getElementById('result');
+
+      nameInput.addEventListener('input', function () {
+        model.set({ name: nameInput.value })
+      });
+
+      model.on('change:name', function() {
+        resultElem.innerText = model.get('name');
+      });
+    </script>
+  </body>
+
+</html>
