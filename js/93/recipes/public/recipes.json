@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "chulent",
+    "ingredients": [
+      "meat",
+      "potatoes",
+      "all sorts of beans"
+    ],
+    "directions": [
+      "add ingredients to pot",
+      "cook overnight"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "scrambled eggs",
+    "ingredients": [
+      "eggs",
+      "salt",
+      "pepper"
+    ],
+    "directions": [
+      "mix ingredients",
+      "fry"
+    ]
+  }
+]

@@ -5,11 +5,11 @@ import WelcomeClass from './WelcomeClass';
 function App() {
   return (
     <div>
-      App - Hello World
+      App - Hello World!!!
       <Welcome first="Joe" last="Biden"/>
       <WelcomeClass first="Joe" last="Biden" />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
