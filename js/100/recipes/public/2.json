@@ -1,0 +1,14 @@
+{
+  "id": 2,
+  "name": "scrambled eggs",
+  "ingredients": [
+    "eggs",
+    "salt",
+    "pepper"
+  ],
+  "directions": [
+    "mix ingredients",
+    "fry"
+  ],
+  "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWnwZ4KOcp-a7R7C2OGupFHsLu4tmzLstcwg&usqp=CAU"
+}
