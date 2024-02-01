@@ -1,0 +1,7 @@
+{
+  "xtype": "module",
+  "dependencies": {
+    "bl": "^6.0.10",
+    "connect": "^3.7.0"
+  }
+}
