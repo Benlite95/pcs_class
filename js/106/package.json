@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "nodemon useMagicWord.js"
+  },
+  "dependencies": {
+    "connect": "^3.7.0",
+    "express": "^4.18.2"
+  }
+}
