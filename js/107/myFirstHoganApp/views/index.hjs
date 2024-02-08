@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ title }}</p>
+
+    <ul>
+      {{#fruits}}
+      <li>{{name}}</li>
+      {{/fruits}}
+    </ul>
+
+  {{#fruit}}
+    My favorite is:
+    <!--{{#fruit}}
+    {{name}}
+    {{/fruit}}
+    {{fruit.name}}-->
+    {{name}}
+  {{/fruit}}
+
+  <br/>
+
+  {{#hasNoNames}}
+  None works for the government.
+  {{/hasNoNames}}
+
+  Some people in government:
+  <ul>
+    {{#names}}
+    <li>{{.}}</li>
+    {{/names}}
+  </ul>
+  </body>
+</html>
