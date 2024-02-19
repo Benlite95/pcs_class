@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      body {
+        color: {{color}};
+        background-color: {{bgcolor}};
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>{{appTitle}}</h1>
+    <form>
+      <label>color:
+        <input type="color" name="color" value="{{color}}">
+      </label>
+      <label>background color:
+        <input type="color" name="bgcolor" value="{{bgcolor}}">
+      </label>
+      <button>submit</button>
+    </form>
+    {{> content}}
+  </body>
+
+</html>
