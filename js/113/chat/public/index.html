@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form id="login">
+      <div id="error"></div>
+      <input id="user" required placeholder="enter your name" />
+      <button>login</button>
+    </form>
+    <div id="message-container">
+      <div id="messages"></div>
+      <form id="message">
+        <input id="msg" required />
+        <button>send</button>
+      </form>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
