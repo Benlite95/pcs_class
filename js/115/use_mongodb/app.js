@@ -23,12 +23,12 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -43,7 +43,7 @@ module.exports = app;
 const { MongoClient, ServerApiVersion } = require('mongodb');
 // Replace the uri string with your connection string.
 //const uri = 'mongodb://127.0.0.1:27017';
-const uri = 'mongodb+srv://slubowsky:uLt3p2sHbmDpFATK@cluster0.ebvluuf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const uri = 'mongodb+srv://<username>:<password>@cluster0.ebvluuf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
