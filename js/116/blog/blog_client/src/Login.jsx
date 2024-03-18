@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import useForm from './UseForm';
 
 export default function Login({ setUsername }) {
@@ -38,3 +39,7 @@ export default function Login({ setUsername }) {
     </form>
   )
 }
+
+Login.propTypes = {
+  setUsername: PropTypes.func.isRequired
+};

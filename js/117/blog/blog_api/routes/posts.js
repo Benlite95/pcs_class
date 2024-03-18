@@ -1,5 +1,6 @@
 import express from 'express';
 import Joi from 'joi';
+import authenticatedUserOnly from '../authenticatedUserOnly.js';
 
 const router = express.Router();
 
@@ -24,13 +25,20 @@ router.route('/')
       next(err);
     }
   })
-  .post(async (req, res, next) => {
+  .post(authenticatedUserOnly, async (req, res, next) => {
     const validationResult = postSchema.validate(req.body, { abortEarly: false });
     if (validationResult.error) {
-      res.statusCode = 422;
-      return res.end(validationResult.error);
+      const err = new Error(validationResult.error.message);
+      err.status = 422;
+      next(err);
     }
-    
+
+    /*if (! req.session.username) {
+      const err = new Error('You must be logged in to add a post');
+      err.statusCode = 401;
+      next(err);
+    }*/
+
     req.body.author = req.session.username;
     req.body.date = new Date();
     try {

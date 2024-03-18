@@ -20,8 +20,9 @@ router.post('/register', (async (req, res, next) => {
   try {
     const validationResult = userSchema.validate(req.body, { abortEarly: false });
     if (validationResult.error) {
-      res.statusCode = 422;
-      return res.end(validationResult.error);
+      const err = new Error(validationResult.error.message);
+      err.status = 422;
+      next(err);
     }
 
     const hash = await bcrypt.hash(req.body.password, 10);

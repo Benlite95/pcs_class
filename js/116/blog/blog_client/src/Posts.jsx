@@ -18,29 +18,23 @@ export default function Posts() {
     })();
   }, []);
 
+  const socketIo = io('http://localhost:8080');
   useEffect(() => {
-    //console.log('setting up socket io connection');
-
-    const socketIo = io('http://localhost:8080');
-    socketIo.on('post', post => {
-      console.log('got new post', post);
-
-      //posts.push(post);
-      //setPosts(posts);
-
+    function processPost(post) {
       const newPosts = [...posts];
       newPosts.push(post);
       setPosts(newPosts);
-    });
+    }
+    socketIo.on('post', processPost);
 
     return () => {
-      socketIo.close();
+      socketIo.off(processPost);
     }
-  }, [posts]);
+  }, [posts, socketIo]);
 
   return (
     <div>
-      {posts.map(post => <Post post={post}/>)}
+      {posts.map(post => <Post key={post._id} post={post}/>)}
     </div>
   )
 }

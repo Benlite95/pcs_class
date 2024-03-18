@@ -67,7 +67,7 @@ app.use(function (req, res, next) {
   next(error);
 });
 
-app.use(function (err, req, res) {
+app.use(function (err, req, res, next) {
   res.status(err.statusCode || 500);
   res.send(err.message);
 });
